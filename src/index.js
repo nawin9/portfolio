@@ -8,29 +8,19 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 
 import Main from './components/Main';
-import Content from './components/Content';
-import Sidebar from './components/Sidebar';
-import Footer from './components/Footer';
 
-const App = () => {
-    return (
-        <>
-            <Main />
-            <div className="wrapper">
-                <Sidebar />
-                <Content />
-            </div>
-            <Footer />
-        </>
-    );
-};
+import Skill from './pages/Skill';
+import Work from './pages/Work';
+import Resume from './pages/Resume';
 
-// ReactDOM.render(<App />, document.getElementById('root'));
 ReactDOM.render(
     <I18nextProvider i18n={i18n}>
         <BrowserRouter>
             <Switch>
-                <Route exact path="/" component={App} />
+                <Route exact path="/" component={Main} />
+                <Route exact path="/skill" component={Skill} />
+                <Route exact path="/work" component={Work} />
+                <Route exact path="/resume" component={Resume} />
             </Switch>
         </BrowserRouter>
     </I18nextProvider>,
@@ -41,5 +31,3 @@ ReactDOM.render(
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
-
-export default App;
