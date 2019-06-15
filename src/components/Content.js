@@ -10,13 +10,11 @@ const Content = () => {
                 </h2>
                 <div className="summary">
                     <p>
-                        <strong>Summarise your career here</strong> lorem ipsum
-                        dolor sit amet, consectetuer adipiscing elit. Lorem
-                        ipsum dolor sit amet, consectetuer adipiscing elit.
-                        Aenean commodo ligula eget dolor aenean massa. Cum
-                        sociis natoque penatibus et magnis dis parturient
-                        montes, nascetur ridiculus mus. Donec quam felis,
-                        ultricies nec, pellentesque eu.
+                        Currently working as a full stack developer at Uppli
+                        SAS, Paris, I'm specialized in front-end technologies
+                        using the latest frameworks especially React. I've got
+                        good skills in problem-solving and I'm interested in new
+                        challenges.
                     </p>
                 </div>
             </section>
@@ -28,71 +26,116 @@ const Content = () => {
                 <div className="item">
                     <div className="meta">
                         <div className="upper-row">
-                            <h3 className="job-title">Lead Developer</h3>
-                            <div className="time">2015 - Present</div>
+                            <h3 className="job-title">Full Stack Developer</h3>
+                            <div className="time">2018 - Present</div>
                         </div>
-                        <div className="company">
-                            Startup Hubs, San Francisco
-                        </div>
+                        <div className="company">Uppli, Paris</div>
                     </div>
                     <div className="details">
                         <p />
-                        <p>
-                            <strong>Describe your role here</strong> lorem ipsum
-                            dolor sit amet, consectetuer adipiscing elit. Aenean
-                            commodo ligula eget dolor. Aenean massa. Cum sociis
-                            natoque penatibus et magnis dis parturient montes,
-                            nascetur ridiculus mus. Donec quam felis, ultricies
-                            nec, pellentesque eu, pretium quis, sem. Nulla
-                            consequat massa quis enim. Donec pede justo.
-                        </p>
-                        <p>
-                            Sed ut perspiciatis unde omnis iste natus error sit
-                            voluptatem accusantium doloremque laudantium, totam
-                            rem aperiam, eaque ipsa quae ab illo inventore
-                            veritatis et quasi architecto beatae vitae dicta
-                            sunt explicabo.
-                        </p>
+                        <strong>React Developer</strong>
+                        <ul>
+                            <li>Develop a website for energy subscription</li>
+                            <li>
+                                Develop a website for client space dashboard
+                            </li>
+                            <li>Develop a website for client payment</li>
+                            <li>
+                                Participate in app development for taxi order at
+                                CDG airport
+                            </li>
+                        </ul>
                         <p />
                     </div>
                 </div>
                 <div className="item">
                     <div className="meta">
                         <div className="upper-row">
-                            <h3 className="job-title">
-                                Senior Software Engineer
-                            </h3>
-                            <div className="time">2014 - 2015</div>
+                            <h3 className="job-title">Front-End Intern</h3>
+                            <div className="time">2018 (6 months)</div>
                         </div>
-                        <div className="company">Google, London</div>
+                        <div className="company">Mobility Codes, Paris</div>
                     </div>
                     <div className="details">
                         <p>
-                            <strong>Describe your role here</strong> lorem ipsum
-                            dolor sit amet, consectetuer adipiscing elit. Aenean
-                            commodo ligula eget dolor. Aenean massa. Cum sociis
-                            natoque penatibus et magnis dis parturient montes,
-                            nascetur ridiculus mus. Donec quam felis, ultricies
-                            nec, pellentesque eu, pretium quis, sem.
+                            <strong>iOS and Web Developer</strong>
+                            <ul>
+                                <li>Develop iOS app for taxis and VTC</li>
+                                <li>
+                                    Complety renew the official website of Uppli
+                                </li>
+                                <li>
+                                    Start a web development for energy
+                                    subscription
+                                </li>
+                            </ul>
                         </p>
                     </div>
                 </div>
                 <div className="item">
                     <div className="meta">
                         <div className="upper-row">
-                            <h3 className="job-title">UI Developer</h3>
-                            <div className="time">2012 - 2014</div>
+                            <h3 className="job-title">Front-End Intern</h3>
+                            <div className="time">2017 - 2018</div>
                         </div>
-                        <div className="company">Amazon, London</div>
+                        <div className="company">Uppli, Paris</div>
                     </div>
                     <div className="details">
                         <p>
-                            <strong>Describe your role here</strong> lorem ipsum
-                            dolor sit amet, consectetuer adipiscing elit. Aenean
-                            commodo ligula eget dolor. Aenean massa. Cum sociis
-                            natoque penatibus et magnis dis parturient montes,
-                            nascetur ridiculus mus. Donec quam felis, ultricies
-                            nec, pellentesque eu, pretium quis, sem.
+                            <strong>Hybrid Mobile Developer</strong>
+                            <ul>
+                                <li>
+                                    Develop a social meeting app using React
+                                    Native
+                                </li>
+                                <li>
+                                    Develop a geolocalisation app using bridge
+                                    between React Native and Swift
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div className="item">
+                    <div className="meta">
+                        <div className="upper-row">
+                            <h3 className="job-title">Front-End Intern</h3>
+                            <div className="time">2016 (6 months)</div>
+                        </div>
+                        <div className="company">Uppli, Paris</div>
+                    </div>
+                    <div className="details">
+                        <p>
+                            <strong>Mobile Developer</strong>
+                            <ul>
+                                <li>
+                                    Develop an social network app using Swift
+                                    2.1
+                                </li>
+                                <li>
+                                    Develop an app using Ionic and AngularJS
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div className="item">
+                    <div className="meta">
+                        <div className="upper-row">
+                            <h3 className="job-title">CRM Intern</h3>
+                            <div className="time">2014 (4 months)</div>
+                        </div>
+                        <div className="company">Opinel, Chambéry</div>
+                    </div>
+                    <div className="details">
+                        <p>
+                            <strong>CRM Developer</strong>
+                            <ul>
+                                <li>
+                                    Develop an interface between ERP Sylob and
+                                    CRM Pivotal
+                                </li>
+                            </ul>
                         </p>
                     </div>
                 </div>
@@ -102,18 +145,7 @@ const Content = () => {
                     <i className="fa fa-archive" />
                     Projects
                 </h2>
-                <div className="intro">
-                    <p>
-                        <strong>
-                            You can list your side projects or open source
-                            libraries in this section.
-                        </strong>{' '}
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Vestibulum et ligula in nunc bibendum fringilla a eu
-                        lectus
-                    </p>
-                </div>
-                <div className="item">
+                {/* <div className="item">
                     <span className="project-title">
                         <a href="https://github.com/aerohub/hugrid">Hugrid</a>
                     </span>{' '}
@@ -168,7 +200,7 @@ const Content = () => {
                     <span className="project-tagline">
                         A simple responsive Hugo theme for personal site.
                     </span>
-                </div>
+                </div> */}
             </section>
             <section className="skills-section section">
                 <h2 className="section-title">
@@ -177,40 +209,27 @@ const Content = () => {
                 </h2>
                 <div className="skillset">
                     <div className="item">
-                        <h3 className="level-title">Python &amp; Django</h3>
-                        <div className="level-bar">
-                            <div className="level-bar-inner" data-level="98%" />
-                        </div>
+                        <h3 className="level-title">React, Angular, jQuery</h3>
                     </div>
                     <div className="item">
-                        <h3 className="level-title">Javascript &amp; jQuery</h3>
-                        <div className="level-bar">
-                            <div className="level-bar-inner" data-level="98%" />
-                        </div>
+                        <h3 className="level-title">Node</h3>
                     </div>
                     <div className="item">
-                        <h3 className="level-title">Angular</h3>
-                        <div className="level-bar">
-                            <div className="level-bar-inner" data-level="95%" />
-                        </div>
+                        <h3 className="level-title">Python</h3>
                     </div>
                     <div className="item">
-                        <h3 className="level-title">HTML5 &amp; CSS</h3>
-                        <div className="level-bar">
-                            <div className="level-bar-inner" data-level="95%" />
-                        </div>
+                        <h3 className="level-title">Java</h3>
                     </div>
                     <div className="item">
-                        <h3 className="level-title">Ruby on Rails</h3>
-                        <div className="level-bar">
-                            <div className="level-bar-inner" data-level="75%" />
-                        </div>
+                        <h3 className="level-title">C, C++, C#</h3>
                     </div>
                     <div className="item">
-                        <h3 className="level-title">Sketch &amp; Photoshop</h3>
-                        <div className="level-bar">
-                            <div className="level-bar-inner" data-level="60%" />
-                        </div>
+                        <h3 className="level-title">Elm</h3>
+                    </div>
+                    <div className="item">
+                        <h3 className="level-title">
+                            HTML5, CSS3, Flexbox, CSS Grid
+                        </h3>
                     </div>
                 </div>
             </section>

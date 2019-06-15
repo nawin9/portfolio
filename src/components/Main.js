@@ -35,7 +35,7 @@ const Main = () => {
                 ))}
             </div>
 
-            <div>
+            {/* <div>
                 <button onClick={() => changeLanguage('el')}>el</button>
                 <button onClick={() => changeLanguage('en')}>en</button>
                 <h3 className="focus">{t('Declarative')}</h3>
@@ -45,7 +45,7 @@ const Main = () => {
                     will efficiently update and render just the right components
                     when your data changes.
                 </Trans>
-            </div>
+            </div> */}
         </main>
     );
 };

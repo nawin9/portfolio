@@ -10,7 +10,7 @@ import * as serviceWorker from './serviceWorker';
 import Main from './components/Main';
 
 import Skill from './pages/Skill';
-import Work from './pages/Work';
+import Project from './pages/Project';
 import Resume from './pages/Resume';
 
 ReactDOM.render(
@@ -19,7 +19,7 @@ ReactDOM.render(
             <Switch>
                 <Route exact path="/" component={Main} />
                 <Route exact path="/skill" component={Skill} />
-                <Route exact path="/work" component={Work} />
+                <Route exact path="/project" component={Project} />
                 <Route exact path="/resume" component={Resume} />
             </Switch>
         </BrowserRouter>
