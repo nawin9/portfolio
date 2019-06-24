@@ -1,3 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Personal website built with Nextjs
 
-This is my portfolio
+### TODO
+
+-   [x] Styled components
+-   [ ] CI CD
+-   [ ] Localization
+-   [ ] Firebase Integration
