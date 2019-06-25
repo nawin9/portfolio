@@ -1,5 +1,9 @@
-import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+// import {
+//     faGithub,
+//     faLinkedin,
+//     faInstagram,
+// } from '@fortawesome/free-brands-svg-icons';
+// import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 export default {
     introduction: {
@@ -12,19 +16,23 @@ export default {
     socialNetworks: [
         {
             link: 'https://github.com/nawin9',
-            icon: faGithub,
+            // icon: faGithub,
+            icon: 'github',
         },
         {
             link: 'mailto:kim.nawin@gmail.com',
-            icon: faEnvelope,
+            // icon: faEnvelope,
+            icon: 'envelope',
         },
         {
             link: 'https://www.linkedin.com/in/nawin-kim',
-            icon: faLinkedin,
+            // icon: faLinkedin,
+            icon: 'linkedin',
         },
         {
             link: 'https://www.instagram.com/nawindragon',
-            icon: faInstagram,
+            // icon: faInstagram,
+            icon: 'instagram',
         },
     ],
     navigations: [
@@ -62,7 +70,8 @@ export default {
         },
         {
             title: 'Tools and IDE: ',
-            description: 'Vim, VS Code, XCode, Git, Jira, GSuite, Postman, Docker',
+            description:
+                'Vim, VS Code, XCode, Git, Jira, GSuite, Postman, Docker',
         },
     ],
     experiences: [

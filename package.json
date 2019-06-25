@@ -8,8 +8,8 @@
         "dev": "next",
         "build": "next build",
         "start": "next start",
-        "export": "next export",
-        "serve": "http-server ./out",
+        "export": "next build && next export",
+        "serve": "next build && next export && http-server ./out",
         "deploy": "gh-pages -d out",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
@@ -29,6 +29,7 @@
         "next-images": "^1.1.2",
         "react": "^16.8.6",
         "react-dom": "^16.8.6",
+        "react-fontawesome": "^1.6.1",
         "styled-components": "^4.3.2"
     },
     "devDependencies": {
