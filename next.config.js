@@ -30,9 +30,6 @@ module.exports = withCss(
         withImages({
             exportPathMap: () => ({
                 '/': { page: '/' },
-                '/experiences': { page: '/experiences' },
-                '/skills': { page: '/skills' },
-                '/projects': { page: '/projects' },
             }),
             assetPrefix: !debug ? 'https://nawin9.github.io/portfolio/' : '',
             env: {
