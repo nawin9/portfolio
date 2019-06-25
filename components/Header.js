@@ -98,7 +98,7 @@ export default () => (
         <Nav>
             {info.navigations.map((item, index) => (
                 <li key={index}>
-                    <Link href={item.path}>
+                    <Link href={item.path} as={`${process.env.BACKEND_URL}${item.path}`}>
                         <a>{item.title}</a>
                     </Link>
                 </li>
