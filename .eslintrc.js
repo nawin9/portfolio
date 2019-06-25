@@ -7,6 +7,7 @@ module.exports = {
     rules: {
         indent: 0,
         'no-tabs': 0,
+        'max-len': 0,
         'eol-last': ['error', 'always'],
         'no-underscore-dangle': 0,
         'jsx-a11y/anchor-is-valid': 0,

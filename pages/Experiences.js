@@ -1,5 +1,9 @@
 import React from 'react';
+import Head from 'next/head';
 import styled from 'styled-components';
+
+import Header from '../components/Header';
+
 import info from '../data/info';
 import config from '../config';
 
@@ -59,22 +63,28 @@ const DetailRow = styled.div`
 `;
 
 export default () => (
-    <section>
-        <CenteredHeader>Experiences</CenteredHeader>
-        <DetailColumn>
-            {info.experiences.map((exp, index) => (
-                <DetailRow key={index}>
-                    <div>
-                        <p>{exp.title}</p>
-                        <p>{exp.rightContent}</p>
-                    </div>
-                    <ul>
-                        {exp.bullets.map((bullet, idx) => (
-                            <li key={idx}>{bullet}</li>
-                        ))}
-                    </ul>
-                </DetailRow>
-            ))}
-        </DetailColumn>
-    </section>
+    <>
+        <Head>
+            <title>Nawin Kim - Experiences</title>
+        </Head>
+        <Header />
+        <section>
+            <CenteredHeader>Experiences</CenteredHeader>
+            <DetailColumn>
+                {info.experiences.map((exp, index) => (
+                    <DetailRow key={index}>
+                        <div>
+                            <p>{exp.title}</p>
+                            <p>{exp.rightContent}</p>
+                        </div>
+                        <ul>
+                            {exp.bullets.map((bullet, idx) => (
+                                <li key={idx}>{bullet}</li>
+                            ))}
+                        </ul>
+                    </DetailRow>
+                ))}
+            </DetailColumn>
+        </section>
+    </>
 );

@@ -1,14 +1,30 @@
 import React from 'react';
 import Document, { Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
-import Header from '../components/Header';
 
 class HTMLDocument extends Document {
-    static getInitialProps({ renderPage }) {
+    static async getInitialProps(ctx) {
         const sheet = new ServerStyleSheet();
-        const page = renderPage(App => props => sheet.collectStyles(<App {...props} />));
-        const styleTags = sheet.getStyleElement();
-        return { ...page, styleTags };
+        const originalRenderPage = ctx.renderPage;
+
+        try {
+            ctx.renderPage = () => originalRenderPage({
+                    enhanceApp: App => props => sheet.collectStyles(<App {...props} />),
+                });
+
+            const initialProps = await Document.getInitialProps(ctx);
+            return {
+                ...initialProps,
+                styles: (
+                    <>
+                        {initialProps.styles}
+                        {sheet.getStyleElement()}
+                    </>
+                ),
+            };
+        } finally {
+            sheet.seal();
+        }
     }
 
     render() {
@@ -36,17 +52,22 @@ class HTMLDocument extends Document {
                         property="og:description"
                         content="As a full stack developer, I am specialized in Front-End technologies."
                     />
-                    <meta property="og:image" content="https://nawin.kim/static/cover.png" />
+                    <meta
+                        property="og:image"
+                        content="https://nawin.kim/static/cover.png"
+                    />
                     <meta property="og:locale" content="en" />
 
-                    <meta property="twitter:card" content="summary_large_image" />
+                    <meta
+                        property="twitter:card"
+                        content="summary_large_image"
+                    />
                     <meta property="twitter:url" content="https://nawin.kim/" />
                     <meta property="twitter:title" content="Nawin Kim" />
                     <meta
                         property="twitter:description"
                         content="As a full stack developer, I am specialized in Front-End technologies."
                     />
-                    {this.props.styleTags}
                     <noscript>
                         <div className="flex center">
                             <div className="card noscript">
@@ -56,7 +77,6 @@ class HTMLDocument extends Document {
                     </noscript>
                 </Head>
                 <body>
-                    <Header />
                     <Main />
                     <NextScript />
                 </body>
