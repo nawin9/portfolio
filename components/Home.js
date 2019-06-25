@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import FontAwesome from 'react-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import info from '../data/info';
 
 const Home = styled.section`
@@ -34,8 +33,7 @@ export default () => (
                     rel="noopener noreferrer"
                     href={s.link}
                 >
-                    {/* <FontAwesomeIcon icon={s.icon} size="2x" width="0" /> */}
-                    <FontAwesome name={s.icon} size="2x" />
+                    <FontAwesomeIcon icon={s.icon} size="2x" width="25" />
                 </a>
             ))}
         </p>

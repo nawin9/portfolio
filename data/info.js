@@ -1,9 +1,9 @@
-// import {
-//     faGithub,
-//     faLinkedin,
-//     faInstagram,
-// } from '@fortawesome/free-brands-svg-icons';
-// import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import {
+    faGithub,
+    faLinkedin,
+    faInstagram,
+} from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 export default {
     introduction: {
@@ -16,23 +16,19 @@ export default {
     socialNetworks: [
         {
             link: 'https://github.com/nawin9',
-            // icon: faGithub,
-            icon: 'github',
+            icon: faGithub,
         },
         {
             link: 'mailto:kim.nawin@gmail.com',
-            // icon: faEnvelope,
-            icon: 'envelope',
+            icon: faEnvelope,
         },
         {
             link: 'https://www.linkedin.com/in/nawin-kim',
-            // icon: faLinkedin,
-            icon: 'linkedin',
+            icon: faLinkedin,
         },
         {
             link: 'https://www.instagram.com/nawindragon',
-            // icon: faInstagram,
-            icon: 'instagram',
+            icon: faInstagram,
         },
     ],
     navigations: [

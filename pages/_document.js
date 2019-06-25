@@ -44,10 +44,6 @@ class HTMLDocument extends Document {
 
                     <link rel="shortcut icon" href="/static/favicon.ico" />
                     <link rel="canonical" href="https://nawin.kim/" />
-                    <link
-                        rel="stylesheet"
-                        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-                    />
 
                     <meta property="og:type" content="website" />
                     <meta property="og:url" content="https://nawin.kim/" />
