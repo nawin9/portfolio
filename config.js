@@ -11,6 +11,7 @@ const color = {
     primary: '#2bbc8a',
     secondary: '#c9cacc',
     tertiary: '#2e8b57',
+    quaternary: '#313131',
 };
 
 export default {

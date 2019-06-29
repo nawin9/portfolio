@@ -73,28 +73,16 @@ export default {
     experiences: [
         {
             title: 'Full Stack Developer at Uppli SAS, PARIS',
-            rightContent: '2018 - Present',
+            rightContent: '2017 - Present',
             bullets: [
                 'Build a website for energy subscription',
                 'Develop a website for client space dashboard',
                 'Create a website for client payment',
                 'Participate in app development for taxi order at CDG airport',
                 'Help and tutor junior devs on all technical content in various projects',
-            ],
-        },
-        {
-            title: 'Front-End Intern at Mobility Codes, PARIS',
-            rightContent: '2018 (6 months)',
-            bullets: [
                 'Develop an iOS app for taxis and VTC',
                 'Start a web site development for energy subscription',
                 'Renew the official website of Uppli',
-            ],
-        },
-        {
-            title: 'Front-End Intern at Uppli SAS, PARIS',
-            rightContent: '2017 - 2018',
-            bullets: [
                 'Develop and stabilize cross-platform app for social meeting using React Native',
                 'Build a geolocalisation app using bridge between React Native and Swift',
             ],
@@ -114,6 +102,28 @@ export default {
                 'Create an interface between CRM Pivotal and ERP Sylob (Both are commercial app)',
                 'Participate in networking installation in industry',
             ],
+        },
+    ],
+    projects: [
+        {
+            title: 'EEH',
+            description:
+                'An iOS app where users can manage their tasks by following Eisenhower matrix method',
+            development: 'MVVM, RxSwift, Firebase',
+            link: 'https://github.com/nawin9/EEH',
+        },
+        {
+            title: 'PikaRide',
+            description:
+                'A hybrid mobile app developed which allows user to locate cars for desired destination.',
+            development: 'Ionic 4, Cordova, Firebase',
+            link: 'https://github.com/nawin9/pikaride',
+        },
+        {
+            title: 'NightSam',
+            description:
+                'A full stack development for cross-platform apps where users can find nearest night clubs',
+            development: 'NodeJS, ExpressJS, MongoDB, Angular, Docker Compose',
         },
     ],
 };

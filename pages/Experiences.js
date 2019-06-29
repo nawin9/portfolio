@@ -1,66 +1,28 @@
 import React from 'react';
 import Head from 'next/head';
 import styled from 'styled-components';
+import { Timeline, TimelineEvent } from 'react-event-timeline';
 
 import Header from '../components/Header';
 
 import info from '../data/info';
 import config from '../config';
 
-const { device, color } = config;
+const { color } = config;
 
 const CenteredHeader = styled.h4`
     text-align: center;
     margin-bottom: 1.25em;
 `;
 
-const DetailColumn = styled.div`
-    display: grid;
-    text-align: left;
-`;
-
-const DetailRow = styled.div`
-    margin-top: 30px;
-
-    div {
-        display: grid;
-        grid-template-columns: 3fr 1fr;
-        margin-top: 10px;
-        padding: 10px;
-        background: ${color.tertiary};
-        border-radius: 4px;
-
-        p {
-            margin: 0;
-            font-family: 'QuicksandBold';
-
-            :nth-child(2) {
-                text-align: right;
-            }
-        }
-
-        @media ${device.mobile} {
-            grid-template-columns: 1fr;
-            grid-auto-rows: minmax(10px, auto);
-
-            p {
-                :nth-child(1) {
-                    order: 2;
-                }
-
-                :nth-child(2) {
-                    text-align: left;
-                    order: 1;
-                }
-            }
-        }
-
-        li {
-            list-style-type: square;
-            margin-left: 18px;
-        }
+const DetailRow = styled.ul`
+    li {
+        list-style-type: square;
     }
 `;
+
+const cardBorderRadius = '10px';
+const contentBorderRadius = '8px';
 
 export default () => (
     <>
@@ -70,21 +32,36 @@ export default () => (
         <Header />
         <section>
             <CenteredHeader>Experiences</CenteredHeader>
-            <DetailColumn>
+            <Timeline>
                 {info.experiences.map((exp, index) => (
-                    <DetailRow key={index}>
-                        <div>
-                            <p>{exp.title}</p>
-                            <p>{exp.rightContent}</p>
-                        </div>
-                        <ul>
+                    <TimelineEvent
+                        key={index}
+                        title={exp.rightContent}
+                        subtitle={exp.title}
+                        container="card"
+                        bubbleStyle={{ background: '#1d1f21' }}
+                        titleStyle={{ color: 'white', fontSize: '0.8rem' }}
+                        subtitleStyle={{ color: 'white', fontSize: '0.7rem' }}
+                        style={{ borderRadius: cardBorderRadius }}
+                        cardHeaderStyle={{
+                            borderTopRightRadius: contentBorderRadius,
+                            borderTopLeftRadius: contentBorderRadius,
+                            background: color.tertiary,
+                        }}
+                        contentStyle={{
+                            background: color.quaternary,
+                            borderBottomLeftRadius: contentBorderRadius,
+                            borderBottomRightRadius: contentBorderRadius,
+                        }}
+                    >
+                        <DetailRow>
                             {exp.bullets.map((bullet, idx) => (
                                 <li key={idx}>{bullet}</li>
                             ))}
-                        </ul>
-                    </DetailRow>
+                        </DetailRow>
+                    </TimelineEvent>
                 ))}
-            </DetailColumn>
+            </Timeline>
         </section>
     </>
 );
